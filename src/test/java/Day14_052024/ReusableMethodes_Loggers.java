@@ -107,6 +107,7 @@ public class ReusableMethodes_Loggers {
             getScreenShot(driver, elementName, logger);
         }//end of catch block
     }//end of click method
+
         }//end of class
 
 

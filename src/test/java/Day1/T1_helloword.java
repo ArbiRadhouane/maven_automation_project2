@@ -6,5 +6,5 @@ public class T1_helloword {
         System.out.println("hello world");
     }//end of main
 }//end of class
-//bom
+
 

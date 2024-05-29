@@ -8,8 +8,6 @@ import org.junit.Assert;
 import org.testng.annotations.Test;
 
 public class T1_googleSearch_Loggers extends TestParent {
-
-
         @Test(priority = 1)
         public void tc001_verifyGoogleTitle() {
             //navigate to google homepage
@@ -21,7 +19,6 @@ public class T1_googleSearch_Loggers extends TestParent {
             //assert the two titles
             ReusableMethodes_Loggers.checkIfStringEquals(expectedGoogleSearchResult,actualGoogleSearchResult,logger);
         }//end of test case 1
-
         @Test(priority = 2)
         public void tc002_searchForACar() {
             //navigate to google home page
@@ -39,7 +36,6 @@ public class T1_googleSearch_Loggers extends TestParent {
             String actualGoogleSearchResult = ReusableMethode.CaptureText(driver, "//*[@id = 'result-stats']", "Search Result");
             String expectedGoogleSearchResult = "About 1,390,000,000 results (0.51 seconds)";
             //Assert the search results
-
             ReusableMethodes_Loggers.checkIfStringEquals(expectedGoogleSearchResult,actualGoogleSearchResult,logger);
         }//end of test case 3
     }
