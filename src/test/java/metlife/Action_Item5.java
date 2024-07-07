@@ -20,9 +20,7 @@ public class Action_Item5 extends TestParent {
         ReusableMethodes_Loggers.clickMethod(driver, logger, "//*[@class='secondaryWrapper-lMu0i']", "find workshop");
         //click on in person link
         ReusableMethodes_Loggers.clickMethod(driver, logger, "//*[@class='buttonText-0YATk']", "person link");
-    }
-    @Test(priority = 1)
-    public void tc002_zipcode() {
+
         //create array list for zipcode
         ArrayList<String> zipCode = new ArrayList<>();
         //declare an array list
@@ -43,10 +41,7 @@ public class Action_Item5 extends TestParent {
             } else if (i == 2) {
                 ReusableMethodes_Loggers.clickByIndex(driver, logger, "//*[@class='linkContainer-C5n9z']", 0, "studio link 1");
             }//end of select studio
-        }
-    }
-        @Test(priority = 2)
-        public void tc002_Address () {
+
             //store address
             String address = ReusableMethode.CaptureText(driver, "//*[@class='address-FnT8k']", "Store Address");
             //print the address
@@ -57,5 +52,5 @@ public class Action_Item5 extends TestParent {
             System.out.println("Schedule: " + schedule);
 
         }//end of capture text
-
+    }
     }//end of class

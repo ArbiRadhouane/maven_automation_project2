@@ -3,8 +3,7 @@
 <suite name="Automation Suite" parallel="false">
     <test name="Smoke Test">
         <classes>
-            <class name = "metlife.test_bing" />
-            <class name="metlife.Action_Item4" />
+            <class name = "metlife.Action_Item5" />
         </classes>
     </test>
 </suite>
